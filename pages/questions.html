@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padel World</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/carrito.css">
+    <link rel="shortcut icon" href="#">
+    <script src="../js/storage.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script src="../js/productos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body onload="init()">
+    <div class="main">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Brand -->
+            <a class="navbar-brand" href="../index.html">PADEL WORLD</a>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Preguntas Frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactos.html">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Carrito Navbar link -->
+            <div class="carrito_nav">
+                <p>$<span class="carrito_nav_precio total">0</span></p>
+                <i class="fas fa-shopping-cart"></i>
+                <span class="carrito_nav_contador">0</span>
+            </div>
+        </nav>
+        <h2 class="tittle_2">Preguntas Frecuentes</h2>
+        <div class="questions">
+            <button data-toggle="collapse" data-target="#demo1">¿Cuál es el precio mínimo para realizar una
+                compra?</button>
+            <div id="demo1" class="collapse">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolor consequatur accusamus deserunt
+                officiis
+                repellendus, vitae voluptate nemo atque porro aliquid iste expedita consequuntur dignissimos
+                necessitatibus
+                dolores eaque praesentium delectus!
+            </div>
+            <button data-toggle="collapse" data-target="#demo2">¿Qué sucede si no hay nadie para recibir el
+                pedido?</button>
+            <div id="demo2" class="collapse">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolorem maiores quasi accusamus id fugit
+                a
+                reprehenderit quos earum accusantium atque rerum ea laboriosam, architecto quod, voluptate possimus ad
+                blanditiis.
+            </div>
+            <button data-toggle="collapse" data-target="#demo3">¿Puede un tercero recibir mi pedido?</button>
+
+            <div id="demo3" class="collapse">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores blanditiis in reprehenderit maxime eum
+                similique perspiciatis enim quisquam recusandae ducimus itaque ullam adipisci deserunt culpa, odit et
+                praesentium ipsa error!
+            </div>
+            <button data-toggle="collapse" data-target="#demo4"> ¿Cómo programo la entrega si no vivo en La
+                Plata?</button>
+
+            <div id="demo4" class="collapse">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, incidunt. Cum nesciunt similique
+                molestiae accusamus assumenda enim repellendus rem, nam corrupti officiis, voluptas labore voluptate
+                quae
+                laudantium numquam voluptatem neque.
+                Omnis dignissimos laudantium reiciendis nesciunt? Obcaecati mollitia debitis officia tempore illum,
+                tempora
+                pariatur distinctio enim ex? Temporibus molestias magni sit omnis sapiente molestiae at culpa
+                exercitationem
+                dolor, consectetur animi neque.
+            </div>
+            <button data-toggle="collapse" data-target="#demo5"> ¿Cuándo recibo la factura?</button>
+
+            <div id="demo5" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem voluptatibus rerum beatae temporibus.
+                Voluptatibus ratione, quae veniam aliquam animi cupiditate molestiae non itaque harum nihil ducimus esse
+                veritatis officiis amet.
+            </div>
+            <button data-toggle="collapse" data-target="#demo6">¿Dónde puedo retirar el pedido?</button>
+
+            <div id="demo6" class="collapse">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, recusandae molestias natus doloremque
+                repellendus eveniet magni odio exercitationem? Deserunt vero dignissimos obcaecati vitae, maxime ipsum
+                itaque repudiandae quo sequi deleniti.
+            </div>
+            <button data-toggle="collapse" data-target="#demo7">Recibí un producto defectuoso ¿Cómo debo
+                proceder?</button>
+
+            <div id="demo7" class="collapse">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, perspiciatis eum perferendis nihil
+                natus
+                quos quae reprehenderit impedit neque. Temporibus sunt magnam nulla exercitationem ipsum vel placeat
+                sint
+                iusto porro.
+                Laudantium molestiae praesentium rerum vitae nobis officia. Ipsum ad nemo fuga sint voluptate id quos
+                eligendi debitis voluptatum accusantium. Debitis, quia. Amet debitis voluptates nostrum veniam maiores
+                nesciunt numquam reprehenderit!
+                Distinctio, ducimus perspiciatis incidunt impedit aperiam nobis porro maiores officia perferendis
+                recusandae
+                sequi ipsa facere id, eaque, ut assumenda possimus illo totam doloribus quisquam? Rem maiores mollitia
+                iusto
+                magnam ex.
+
+            </div>
+            <button data-toggle="collapse" data-target="#demo8">¿Cuáles son los tiempos de entrega?</button>
+
+            <div id="demo8" class="collapse">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex corporis ipsum fuga dolores alias omnis
+                optio
+                repellendus. Autem quo nostrum nesciunt ratione minima, unde, sint non necessitatibus deserunt nulla
+                illum?
+                Qui, soluta ipsa doloremque reprehenderit voluptatibus laboriosam ipsam iste dignissimos consequuntur
+                sint
+                debitis impedit illo accusamus, voluptate optio, accusantium delectus? Velit modi reiciendis mollitia
+                error
+                dolores incidunt esse, voluptates ducimus.
+                Accusantium ad et autem est inventore consequuntur impedit aut ab culpa ut, earum id quam perspiciatis
+                saepe
+                ipsam, aliquam iusto dolore. Facere eum vero quis iusto? Odit sunt veritatis reprehenderit.
+                Vero, possimus, obcaecati illum suscipit reiciendis aliquid ipsum repellendus aliquam impedit veniam
+                asperiores. Quibusdam consectetur, soluta voluptatibus quod tempora dolor esse perferendis officiis
+                veritatis dolores distinctio, maxime, quis accusantium laboriosam.
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer_container">
+                <div class="footer_section">
+                    <h3>LINKS</h3>
+                    <ul>
+                        <li class="footer_section_link">
+                            <a href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="footer_section_link">
+                            <a href="#">Preguntas Frecuentes</a>
+                        </li>
+                        <li class="footer_section_link">
+                            <a href="contactos.html">Contactos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_section">
+                    <h3>CONTACTANOS</h3>
+                    <ul>
+                        <li>Teléfono: +54 9 365 897-1256</li>
+                        <li>Email: padelworld@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer_section">
+                    <h3>SEGUINOS</h3>
+                    <div class="footer_redes">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer_section medios_pago">
+                    <h3>MEDIOS DE PAGO</h3>
+                    <ul>
+                        <li>
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png"
+                                alt="visa" />
+                        </li>
+                        <li>
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png"
+                                alt="mastercard" />
+                        </li>
+                        <li>
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png"
+                                alt="american express" />
+                        </li>
+                        <li>
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png"
+                                alt="naranja" />
+                        </li>
+                        <li>
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png"
+                                alt="mercado pago" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container_copyright">
+                <div class="copyright">
+                    <p>© Padel World - 2022. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="sidebar">
+        <div class="close-btn">
+            <span>x</span>
+        </div>
+        <div class="carrito">
+            <div class="carrito-title">
+                <h3>CARRITO DE COMPRA</h3>
+            </div>
+            <div class="productos-carrito">
+                <!-- Aqui iran los productos en el carrito -->
+            </div>
+            <div class="endCarrito">
+                <p>TOTAL:</p>
+                <p>$<span class="total">0</span></p>
+            </div>
+            <button type="button" class="btn btn-primary pay-btn">Finalizar compra</button>
+        </div>
+
+    </div>
+    <div id="fondo"></div>
+    <script src="https://kit.fontawesome.com/73b7ddbc6b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

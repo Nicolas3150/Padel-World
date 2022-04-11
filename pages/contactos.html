@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padel World</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/carrito.css">
+    <link rel="shortcut icon" href="#">
+    <script src="../js/storage.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script src="../js/productos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body onload="init()">
+    <div class="main">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Brand -->
+            <a class="navbar-brand" href="../index.html">PADEL WORLD</a>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="questions.html">Preguntas Frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Carrito Navbar link -->
+            <div class="carrito_nav">
+                <p>$<span class="carrito_nav_precio total">0</span></p>
+                <i class="fas fa-shopping-cart"></i>
+                <span class="carrito_nav_contador">0</span>
+            </div>
+        </nav>
+
+        <h2 class="tittle_2">Contactos</h2>
+        <!-- Contenido Principal -->
+        <div class="container container_contact">
+            <h3>Envia tu mensaje</h3>
+            <form class="form form-text" id="form">
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" class="name form-control" id="name" placeholder="Nombre" required>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="last form-control" id="last" placeholder="Apellido" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1"></label>
+                    <input type="email" class="email form-control" id="email" aria-describedby="emailHelp"
+                        placeholder="Enter email" required>
+                    <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo electrónico con
+                        nadie más.</small>
+                </div>
+                <div class="form-group">
+                    <textarea class="message form-control" id="message" rows="8"
+                        placeholder="Escriba aqui su mensaje..."></textarea>
+                </div>
+                <input class="button btn btn-primary" type="submit" id="button" value="Enviar email">
+            </form>
+        </div>
+        <div class="info_container">
+            <div class="info_section">
+                <div class="info_icon"><i class="fas fa-map-marker-alt"></i></div>
+                <p>Sucursal Centro: Calle San Martin 3025</p>
+                <p>Sucursal Este: Calle Bv. Galvez 2700</p>
+            </div>
+            <div class="info_section">
+                <div class="info_icon"><i class="fas fa-envelope"></i></div>
+                <p>WhastApp: +54 9 365 897-1256</p>
+                <p>E-mail: padelworld@gmail.com</p>
+            </div>
+            <div class="info_section">
+                <div class="info_icon"><i class="far fa-clock"></i></div>
+                <p>Días de semana: 9:00 - 18:00 Hs.</p>
+                <p>Domingos: Cerrado</p>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer_container">
+                <div class="footer_section">
+                    <h3>LINKS</h3>
+                    <ul>
+                        <li class="footer_section_link">
+                            <a href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="footer_section_link">
+                            <a href="questions.html">Preguntas Frecuentes</a>
+                        </li>
+                        <li class="footer_section_link">
+                            <a href="#">Contactos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_section">
+                    <h3>CONTACTANOS</h3>
+                    <ul>
+                        <li>Teléfono: +54 9 365 897-1256</li>
+                        <li>Email: padelworld@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer_section">
+                    <h3>SEGUINOS</h3>
+                    <div class="footer_redes">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer_section medios_pago">
+                    <h3>MEDIOS DE PAGO</h3>
+                    <ul>
+                        <li>
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png"
+                                alt="visa" />
+                        </li>
+                        <li>
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png"
+                                alt="mastercard" />
+                        </li>
+                        <li>
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png"
+                                alt="american express" />
+                        </li>
+                        <li>
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png"
+                                alt="naranja" />
+                        </li>
+                        <li>
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png"
+                                alt="mercado pago" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container_copyright">
+                <div class="copyright">
+                    <p>© Padel World - 2022. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="sidebar">
+        <div class="close-btn">
+            <span>x</span>
+        </div>
+        <div class="carrito">
+            <div class="carrito-title">
+                <h3>CARRITO DE COMPRA</h3>
+            </div>
+            <div class="productos-carrito">
+                <!-- Aqui iran los productos en el carrito -->
+            </div>
+            <div class="endCarrito">
+                <p>TOTAL:</p>
+                <p>$<span class="total">0</span></p>
+            </div>
+            <button type="button" class="btn btn-primary pay-btn">Finalizar compra</button>
+        </div>
+
+    </div>
+    <div id="fondo"></div>
+
+    <script src="https://kit.fontawesome.com/73b7ddbc6b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+
+    <script src="../js/main.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("IoE974ksXgGy4GsYv");
+        })();
+    </script>
+    <script src="../js/contacto.js"></script>
+</body>
+
+</html>
