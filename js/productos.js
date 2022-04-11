@@ -11,7 +11,6 @@ function cargarProductos() {
                 (filtroActual == product.tipo) && crearCard(product, nodoProducto);
             });
     }
-    persistirDatos();
 }
 
 function crearCard(product, nodoProducto) {

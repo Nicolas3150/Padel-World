@@ -34,7 +34,6 @@ function cargarCarrito() {
     total.forEach((e) => e.textContent = calcularTotal());
     let cantDeProductosDistintos = document.querySelector('.carrito_nav_contador');
     cantDeProductosDistintos.textContent = carrito.length;
-    persistirDatos();
 }
 
 function agregarAlCarrito(e) {
@@ -63,6 +62,7 @@ function agregarAlCarrito(e) {
         lanzarError();
     }
     cargarCarrito();
+    persistirDatos();
 }
 
 function buscarProductId(id) {
@@ -79,6 +79,7 @@ function eliminarProducto(e) {
     let pos = buscarProductId(parseInt(e.target.id));
     carrito.splice(pos, 1);
     cargarCarrito();
+    persistirDatos();
 }
 
 function calcularTotal() {
